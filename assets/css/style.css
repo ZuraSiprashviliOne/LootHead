@@ -1,0 +1,70 @@
+a {
+  text-decoration: none !important; }
+
+.btn {
+  border-radius: 0; }
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden; }
+  header .cover {
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden; }
+  header .navbar {
+    background-color: rgba(0, 0, 0, 0.7); }
+    header .navbar form {
+      position: relative; }
+      header .navbar form input {
+        border-radius: 0;
+        border: 1px solid rgba(248, 249, 250, 0.2); }
+      header .navbar form button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0; }
+  @media only screen and (max-width: 767px) {
+    header .row.header_data .socials {
+      margin-top: 50px; } }
+  header .row.header_data .socials ul li {
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; }
+    header .row.header_data .socials ul li a {
+      display: block;
+      line-height: 45px;
+      text-align: center; }
+  header .row.header_data .prom {
+    margin-top: 100px; }
+    header .row.header_data .prom .border-bottom {
+      border-color: rgba(248, 249, 250, 0.2) !important; }
+    @media only screen and (max-width: 767px) {
+      header .row.header_data .prom {
+        margin-top: 0; } }
+  header .row.header_data .sups {
+    margin-top: 50px; }
+    @media only screen and (max-width: 767px) {
+      header .row.header_data .sups ul {
+        flex-wrap: wrap; }
+        header .row.header_data .sups ul li {
+          flex: 0 0 calc(100% / 3); } }
+    @media only screen and (max-width: 576px) {
+      header .row.header_data .sups ul li {
+        flex: 0 0 50%; } }
+    header .row.header_data .sups li img {
+      width: 100%; }
+  header .row.header_data .vertical_title {
+    writing-mode: tb-rl;
+    letter-spacing: 1px; }
+    @media only screen and (max-width: 767px) {
+      header .row.header_data .vertical_title {
+        writing-mode: initial;
+        margin-bottom: 50px; } }
+  header .row.header_data .line {
+    border-color: rgba(248, 249, 250, 0.5); }
+
+/*# sourceMappingURL=style.css.map */

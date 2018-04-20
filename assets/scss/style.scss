@@ -1,0 +1,116 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "variables";
+
+
+a{
+    text-decoration: none !important;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+
+    .cover{
+        background-color: rgba($black, 0.5);
+        overflow: hidden;
+    }
+
+    .navbar{
+        background-color: rgba($black, 0.7);
+
+        form{
+            position: relative;
+            input{
+                border-radius: 0;
+                border: 1px solid rgba($light, 0.2);
+            }
+            button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                border: 0;
+            }
+        }
+    }
+
+    .row.header_data{
+        .socials{
+            @media only screen and(max-width: $md){
+                margin-top: 50px;
+            }
+            ul{
+                li{
+                    $size: 45px;
+                    font-size: 20px;
+                    width: $size;
+                    height: $size;
+                    border-radius: 50%;
+
+                    a{
+                        display: block;
+                        line-height: $size;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .prom{
+            margin-top: 100px;
+            .border-bottom{
+                border-color: rgba($light, 0.2) !important;
+            }
+            @media only screen and (max-width: $md){
+                margin-top: 0;
+            }
+        }
+
+        .sups{
+            margin-top: 50px;
+            @media only screen and(max-width: $md){
+                ul{
+                    flex-wrap: wrap;
+
+                    li{
+                        flex: 0 0 calc(100% / 3);
+                    }
+                }
+            }
+            @media only screen and(max-width: $sm){
+                ul{
+                    li{
+                        flex: 0 0 50%;
+                    }
+                }
+            }
+
+            li{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .vertical_title{
+            writing-mode: tb-rl;
+            @media only screen and (max-width: $md){
+                writing-mode: initial;
+                margin-bottom: 50px;
+            }
+            letter-spacing: 1px;
+        }
+        
+        .line{
+            border-color: rgba($light, 0.5);
+        }
+    }
+}
